@@ -26,7 +26,7 @@ cd java-qrcode
 
 Running
 
-**Write**
+**Writing QRCode**
 
 ```
 mvn compile \
@@ -48,7 +48,7 @@ Index | Value  | Description
 ![Preview](doc/qrcode.png)
 
 
-**Read**
+**Reading QRCode**
 
 ```
 mvn compile \
