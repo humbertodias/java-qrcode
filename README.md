@@ -27,7 +27,8 @@ cd java-qrcode/src
 Run
 
 ```
-mvn compile exec:java \
+mvn compile \
+exec:java \
 -Dexec.mainClass="QRCodeGen"  \
 -Dexec.args="qrcode.png 512 512 'The quieter you become, the more you can hear.'"
 ```
@@ -46,7 +47,7 @@ Index | Value  | Description
 
 ## Validate
 
-[https://zxing.org/w/decode](https://zxing.org/w/decode)
+[https://zxing.org/w/decode.jspx](https://zxing.org/w/decode.jspx)
 
 ![Preview](doc/decode-succeeded.png)
 
