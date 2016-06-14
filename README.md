@@ -44,6 +44,12 @@ Index | Value  | Description
 ## Output
 ![Preview](doc/qrcode.png)
 
+## Validate
+
+[https://zxing.org/w/decode](https://zxing.org/w/decode)
+
+![Preview](doc/decode-succeeded.png)
+
 
 ## References
 
