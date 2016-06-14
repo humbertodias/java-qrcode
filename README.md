@@ -39,4 +39,6 @@ mvn compile exec:java \
 
 ## References
 
-1. [QRCode](hhttps://en.wikipedia.org/wiki/QR_code)
+1. Wikipedia
+	
+	[QRCode](hhttps://en.wikipedia.org/wiki/QR_code)
