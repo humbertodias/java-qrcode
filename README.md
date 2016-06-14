@@ -24,12 +24,14 @@ Inside the folder
 cd java-qrcode
 ```
 
-Run
+Running
+
+**Write**
 
 ```
 mvn compile \
 exec:java \
--Dexec.mainClass="QRCodeGen"  \
+-Dexec.mainClass="QRCode"  \
 -Dexec.args="doc/qrcode.png 256 256 'The quieter you become, the more you can hear.'"
 ```
 
@@ -37,13 +39,42 @@ exec:java \
 
 Index | Value  | Description
 ------------- | ------------- | -------------
-0 | qrcode.png | File path
+0 | doc/qrcode.png | File path
 1 | 256 | Width Image 
 2 | 256 | Height Image
 3 | 'The quieter you become, the more you can hear.' | Message
 
 ## Output
 ![Preview](doc/qrcode.png)
+
+
+**Read**
+
+```
+mvn compile \
+exec:java \
+-Dexec.mainClass="QRCode"  \
+-Dexec.args="doc/qrcode.png"
+```
+
+Arguments
+
+Index | Value  | Description
+------------- | ------------- | -------------
+0 | doc/qrcode.png | File path
+
+
+```
+[INFO] --- exec-maven-plugin:1.4.0:java (default-cli) @ java-qrcode ---
+The quieter you become, the more you can hear.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.832 s
+[INFO] Finished at: 2016-06-14T00:57:53-03:00
+[INFO] Final Memory: 11M/245M
+[INFO] ------------------------------------------------------------------------
+```
 
 ## Validate
 
