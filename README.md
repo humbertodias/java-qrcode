@@ -21,7 +21,7 @@ git clone https://github.com/humbertodias/java-qrcode.git
 Inside the folder
 
 ```
-cd java-qrcode/src
+cd java-qrcode
 ```
 
 Run
@@ -30,7 +30,7 @@ Run
 mvn compile \
 exec:java \
 -Dexec.mainClass="QRCodeGen"  \
--Dexec.args="qrcode.png 512 512 'The quieter you become, the more you can hear.'"
+-Dexec.args="doc/qrcode.png 256 256 'The quieter you become, the more you can hear.'"
 ```
 
 **Arguments**
@@ -38,8 +38,8 @@ exec:java \
 Index | Value  | Description
 ------------- | ------------- | -------------
 0 | qrcode.png | File path
-1 | 512 | Width Image 
-2 | 512 | Height Image
+1 | 256 | Width Image 
+2 | 256 | Height Image
 3 | 'The quieter you become, the more you can hear.' | Message
 
 ## Output
