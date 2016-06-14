@@ -34,7 +34,7 @@ mvn compile exec:java \
 
 
 ## Output
-![Preview](doc/qrcode.gif)
+![Preview](doc/qrcode.png)
 
 
 ## References
