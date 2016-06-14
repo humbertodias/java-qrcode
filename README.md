@@ -32,6 +32,14 @@ mvn compile exec:java \
 -Dexec.args="qrcode.png 512 512 'The quieter you become, the more you can hear.'"
 ```
 
+**Arguments**
+
+Index | Value  | Description
+------------- | ------------- | -------------
+0 | qrcode.png | File path
+1 | 512 | Width Image 
+2 | 512 | Height Image
+3 | 'The quieter you become, the more you can hear.' | Message
 
 ## Output
 ![Preview](doc/qrcode.png)
