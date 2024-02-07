@@ -3,7 +3,7 @@
 Java Tools for generating QRCode.
 
 
-## Prerequires
+## Prerequisites
 
 1. Git 2.6+
 2. Maven 3.3+
@@ -14,13 +14,13 @@ Java Tools for generating QRCode.
 
 Clone
 
-```
+```shell
 git clone https://github.com/humbertodias/java-qrcode.git
 ```
 
 Inside the folder
 
-```
+```shell
 cd java-qrcode
 ```
 
@@ -28,7 +28,7 @@ Running
 
 **Writing QRCode**
 
-```
+```shell
 mvn compile \
 exec:java \
 -Dexec.mainClass="QRCode"  \
@@ -37,12 +37,12 @@ exec:java \
 
 **Arguments**
 
-Index | Value  | Description
-------------- | ------------- | -------------
-0 | doc/qrcode.png | File path
-1 | 256 | Width Image 
-2 | 256 | Height Image
-3 | 'The quieter you become, the more you can hear.' | Message
+ Index | Value                                            | Description  
+-------|--------------------------------------------------|--------------
+ 0     | doc/qrcode.png                                   | File path    
+ 1     | 256                                              | Width Image  
+ 2     | 256                                              | Height Image 
+ 3     | 'The quieter you become, the more you can hear.' | Message      
 
 ## Output
 ![Preview](doc/qrcode.png)
@@ -50,7 +50,7 @@ Index | Value  | Description
 
 **Reading QRCode**
 
-```
+```shell
 mvn compile \
 exec:java \
 -Dexec.mainClass="QRCode"  \
@@ -59,9 +59,9 @@ exec:java \
 
 Arguments
 
-Index | Value  | Description
-------------- | ------------- | -------------
-0 | doc/qrcode.png | File path
+ Index | Value          | Description 
+-------|----------------|-------------
+ 0     | doc/qrcode.png | File path   
 
 
 ```
