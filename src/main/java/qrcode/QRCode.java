@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class QRCode {
 
-    public File create(String filePath, int width, String text) throws WriterException, IOException {
+    public File create(String filePath, int width, int height, String text) throws WriterException, IOException {
         Map<EncodeHintType, Object> hintMap = new EnumMap<>(EncodeHintType.class);
         hintMap.put(EncodeHintType.CHARACTER_SET, "UTF-8");
 
@@ -30,15 +30,16 @@ public class QRCode {
 
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         BitMatrix byteMatrix = qrCodeWriter.encode(text, BarcodeFormat.QR_CODE, width,
-                width, hintMap);
+                height, hintMap);
         final int qWidth = byteMatrix.getWidth();
-        BufferedImage image = new BufferedImage(qWidth, qWidth,
+        final int qHeight = byteMatrix.getHeight();
+        BufferedImage image = new BufferedImage(qWidth, qHeight,
                 BufferedImage.TYPE_INT_RGB);
         image.createGraphics();
 
         Graphics2D graphics = (Graphics2D) image.getGraphics();
         graphics.setColor(Color.WHITE);
-        graphics.fillRect(0, 0, qWidth, qWidth);
+        graphics.fillRect(0, 0, qWidth, qHeight);
         graphics.setColor(Color.BLACK);
 
         for (int i = 0; i < qWidth; i++) {
