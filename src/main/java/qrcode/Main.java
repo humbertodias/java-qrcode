@@ -18,7 +18,7 @@ public class Main {
         if (args.length == 0) {
             System.err.println("Usage:");
             System.err.println("# Create");
-            System.err.println("java -jar qrcode.jar filePath width height message");
+            System.err.println("java -jar qrcode.jar filePath width message");
             System.err.println("# Read");
             System.err.println("java -jar qrcode.jar imagePath");
             System.exit(1);
@@ -28,7 +28,7 @@ public class Main {
             String text = qrCode.read(args[0], "UTF-8", hintMap);
             System.out.println(text);
         } else if (args.length == 4) {
-            File file = qrCode.create(args[0], Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3]);
+            File file = qrCode.create(args[0], Integer.parseInt(args[1]), args[3]);
             System.out.println("You have successfully created QR Code on " + file.getAbsolutePath());
         }
     }
