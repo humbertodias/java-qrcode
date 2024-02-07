@@ -1,3 +1,5 @@
+[![Build, Test, and Publish Release](https://github.com/humbertodias/java-qrcode/actions/workflows/release.yml/badge.svg)](https://github.com/humbertodias/java-qrcode/actions/workflows/release.yml)
+
 # Java QRCode Generator
 
 Java Tools for generating QRCode.
