@@ -32,7 +32,7 @@ Running
 **Writing**
 
 ```shell
-java -jar target/qrcode-1.0.jar doc/qrcode.png 256 'The quieter you become, the more you can hear.'
+java -jar target/qrcode-1.0.jar doc/qrcode.png 256 256 'The quieter you become, the more you can hear.'
 ```
 
 **Arguments**
@@ -41,7 +41,8 @@ java -jar target/qrcode-1.0.jar doc/qrcode.png 256 'The quieter you become, the 
 -------|--------------------------------------------------|--------------
  0     | doc/qrcode.png                                   | File path    
  1     | 256                                              | Width Image  
- 2     | 'The quieter you become, the more you can hear.' | Message      
+ 2     | 256                                              | Height Image 
+ 3     | 'The quieter you become, the more you can hear.' | Message      
 
 ## Output
 ![Preview](doc/qrcode.png)
