@@ -1,8 +1,8 @@
 [![Build, Test, and Publish Release](https://github.com/humbertodias/java-qrcode/actions/workflows/release.yml/badge.svg)](https://github.com/humbertodias/java-qrcode/actions/workflows/release.yml)
 
-# Java qrcode.Main Generator
+# QRCode Generator
 
-Java Tools for generating qrcode.Main.
+Java Tools for generating qrcode.
 
 
 ## Prerequisites
@@ -61,15 +61,7 @@ Arguments
 
 
 ```
-[INFO] --- exec-maven-plugin:1.4.0:java (default-cli) @ java-qrcode ---
 The quieter you become, the more you can hear.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1.832 s
-[INFO] Finished at: 2016-06-14T00:57:53-03:00
-[INFO] Final Memory: 11M/245M
-[INFO] ------------------------------------------------------------------------
 ```
 
 ## Validate
