@@ -1,8 +1,8 @@
 [![Build, Test, and Publish Release](https://github.com/humbertodias/java-qrcode/actions/workflows/release.yml/badge.svg)](https://github.com/humbertodias/java-qrcode/actions/workflows/release.yml)
 
-# Java QRCode Generator
+# Java qrcode.Main Generator
 
-Java Tools for generating QRCode.
+Java Tools for generating qrcode.Main.
 
 
 ## Prerequisites
@@ -20,21 +20,19 @@ Clone
 git clone https://github.com/humbertodias/java-qrcode.git
 ```
 
-Inside the folder
+Build
 
 ```shell
 cd java-qrcode
+mvn package
 ```
 
 Running
 
-**Writing QRCode**
+**Writing**
 
 ```shell
-mvn compile \
-exec:java \
--Dexec.mainClass="QRCode"  \
--Dexec.args="doc/qrcode.png 256 256 'The quieter you become, the more you can hear.'"
+java -jar target/qrcode-1.0.jar doc/qrcode.png 256 256 'The quieter you become, the more you can hear.'
 ```
 
 **Arguments**
@@ -50,13 +48,10 @@ exec:java \
 ![Preview](doc/qrcode.png)
 
 
-**Reading QRCode**
+**Reading**
 
 ```shell
-mvn compile \
-exec:java \
--Dexec.mainClass="QRCode"  \
--Dexec.args="doc/qrcode.png"
+java -jar target/qrcode-1.0.jar doc/qrcode.png
 ```
 
 Arguments
@@ -87,4 +82,4 @@ The quieter you become, the more you can hear.
 
 ## References
 
-1. [QRCode](https://en.wikipedia.org/wiki/QR_code)
+1. [qrcode.Main](https://en.wikipedia.org/wiki/QR_code)
