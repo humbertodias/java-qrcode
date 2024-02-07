@@ -11,9 +11,8 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.EnumMap;
 import java.util.Map;
 
@@ -59,7 +58,7 @@ public class QRCode {
             throws IOException, NotFoundException {
         BinaryBitmap binaryBitmap = new BinaryBitmap(new HybridBinarizer(
                 new BufferedImageLuminanceSource(
-                        ImageIO.read(Files.newInputStream(Paths.get(filePath))))));
+                        ImageIO.read(new FileInputStream( filePath)))));
         Result qrCodeResult = new MultiFormatReader().decode(binaryBitmap,
                 hintMap);
         return qrCodeResult.getText();
