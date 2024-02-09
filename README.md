@@ -73,4 +73,4 @@ The quieter you become, the more you can hear.
 
 ## References
 
-1. [qrcode.Main](https://en.wikipedia.org/wiki/QR_code)
+1. [qrcode](https://en.wikipedia.org/wiki/QR_code)
